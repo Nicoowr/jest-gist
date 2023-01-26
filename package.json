@@ -43,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/mathieueveillard/js-kata-starter/issues"
   },
-  "homepage": "https://github.com/mathieueveillard/js-kata-starter#readme"
+  "homepage": "https://github.com/mathieueveillard/js-kata-starter#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
 }
