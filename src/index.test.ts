@@ -1,4 +1,6 @@
-import {test, expect} from "."
+import {test} from "."
+import {expect} from "./expect"
+import { run } from "./run";
 test("Test a function which should work", () => {
     // GIVEN
     const expectedResult = 2
@@ -6,7 +8,7 @@ test("Test a function which should work", () => {
     const actualResult = 2
     // THEN
     return expect(actualResult).toEqual(expectedResult)
-})
+}, "only")
 
 test("Test a function which tests the equality of two objects which are the same", () => {
     // GIVEN
@@ -52,3 +54,10 @@ test("Test a function which tests that a number is greater than another but the 
     // THEN
     return expect(actualValue).toBeGreaterThan(expectedNumberToBeGreaterThan)
 })
+
+test("Test that a test can be skipped", () => {
+    return {testPasses: true}
+}, "skip")
+
+
+run()
