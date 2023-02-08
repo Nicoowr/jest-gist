@@ -1,1 +1,0 @@
-- Ecrire tests du cas extrahot
